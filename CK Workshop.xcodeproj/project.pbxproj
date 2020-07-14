@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BE2ACA9F44D626EE028236 /* Pods_CK_Workshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C133B1124850D76A7B9C7224 /* Pods_CK_Workshop.framework */; };
+		8E7A986E24BD2B6B00BCF889 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A984524BD2B6B00BCF889 /* Constants.swift */; };
+		8E7A986F24BD2B6B00BCF889 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A984724BD2B6B00BCF889 /* ORKESerialization.m */; };
+		8E7A987024BD2B6B00BCF889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A984924BD2B6B00BCF889 /* Assets.xcassets */; };
+		8E7A987124BD2B6B00BCF889 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A984A24BD2B6B00BCF889 /* GoogleService-Info.plist */; };
+		8E7A987224BD2B6B00BCF889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A984B24BD2B6B00BCF889 /* LaunchScreen.storyboard */; };
+		8E7A987524BD2B6B00BCF889 /* AppDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985124BD2B6B00BCF889 /* AppDelegate+CardinalKit.swift */; };
+		8E7A987624BD2B6B00BCF889 /* LaunchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985324BD2B6B00BCF889 /* LaunchContainerViewController.swift */; };
+		8E7A987724BD2B6B00BCF889 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985524BD2B6B00BCF889 /* StudyTableViewController.swift */; };
+		8E7A987824BD2B6B00BCF889 /* StudyTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985624BD2B6B00BCF889 /* StudyTableItem.swift */; };
+		8E7A987924BD2B6B00BCF889 /* StudyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985724BD2B6B00BCF889 /* StudyTasks.swift */; };
+		8E7A987A24BD2B6B00BCF889 /* StudyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985824BD2B6B00BCF889 /* StudyTableViewCell.swift */; };
+		8E7A987B24BD2B6B00BCF889 /* StudyTableViewController+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985924BD2B6B00BCF889 /* StudyTableViewController+CardinalKit.swift */; };
+		8E7A987C24BD2B6B00BCF889 /* CKNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985B24BD2B6B00BCF889 /* CKNetworkManager.swift */; };
+		8E7A987D24BD2B6B00BCF889 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985D24BD2B6B00BCF889 /* WithdrawalViewController.swift */; };
+		8E7A987E24BD2B6B00BCF889 /* ProfileTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A985F24BD2B6B00BCF889 /* ProfileTableItem.swift */; };
+		8E7A987F24BD2B6B00BCF889 /* StaticProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986024BD2B6B00BCF889 /* StaticProfileViewController.swift */; };
+		8E7A988024BD2B6B00BCF889 /* CKStudyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986224BD2B6B00BCF889 /* CKStudyUser.swift */; };
+		8E7A988124BD2B6B00BCF889 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986424BD2B6B00BCF889 /* OnboardingViewController.swift */; };
+		8E7A988224BD2B6B00BCF889 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986524BD2B6B00BCF889 /* IntroductionViewController.swift */; };
+		8E7A988324BD2B6B00BCF889 /* CKHealthDataStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986724BD2B6B00BCF889 /* CKHealthDataStepViewController.swift */; };
+		8E7A988424BD2B6B00BCF889 /* LoginStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986824BD2B6B00BCF889 /* LoginStep.swift */; };
+		8E7A988524BD2B6B00BCF889 /* LoginCustomWaitStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A986A24BD2B6B00BCF889 /* LoginCustomWaitStepView.xib */; };
+		8E7A988624BD2B6B00BCF889 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986B24BD2B6B00BCF889 /* ConsentDocument.swift */; };
+		8E7A988724BD2B6B00BCF889 /* LoginCustomWaitStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986C24BD2B6B00BCF889 /* LoginCustomWaitStepViewController.swift */; };
+		8E7A988824BD2B6B00BCF889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A986D24BD2B6B00BCF889 /* AppDelegate.swift */; };
+		8E7A988C24BD2C5800BCF889 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A988B24BD2C5800BCF889 /* HealthKit.framework */; };
+		8E7A988E24BD2D0800BCF889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A988D24BD2D0700BCF889 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E6C789B646FC27EDCDAA408 /* Pods-CK Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CK Workshop.debug.xcconfig"; path = "Target Support Files/Pods-CK Workshop/Pods-CK Workshop.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7A97A124BD2A6200BCF889 /* CK Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CK Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7A984524BD2B6B00BCF889 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8E7A984724BD2B6B00BCF889 /* ORKESerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKESerialization.m; sourceTree = "<group>"; };
+		8E7A984824BD2B6B00BCF889 /* ORKESerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKESerialization.h; sourceTree = "<group>"; };
+		8E7A984924BD2B6B00BCF889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E7A984A24BD2B6B00BCF889 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E7A984C24BD2B6B00BCF889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E7A985024BD2B6B00BCF889 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7A985124BD2B6B00BCF889 /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
+		8E7A985324BD2B6B00BCF889 /* LaunchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchContainerViewController.swift; sourceTree = "<group>"; };
+		8E7A985524BD2B6B00BCF889 /* StudyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
+		8E7A985624BD2B6B00BCF889 /* StudyTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyTableItem.swift; sourceTree = "<group>"; };
+		8E7A985724BD2B6B00BCF889 /* StudyTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyTasks.swift; sourceTree = "<group>"; };
+		8E7A985824BD2B6B00BCF889 /* StudyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyTableViewCell.swift; sourceTree = "<group>"; };
+		8E7A985924BD2B6B00BCF889 /* StudyTableViewController+CardinalKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StudyTableViewController+CardinalKit.swift"; sourceTree = "<group>"; };
+		8E7A985B24BD2B6B00BCF889 /* CKNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKNetworkManager.swift; sourceTree = "<group>"; };
+		8E7A985D24BD2B6B00BCF889 /* WithdrawalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalViewController.swift; sourceTree = "<group>"; };
+		8E7A985F24BD2B6B00BCF889 /* ProfileTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableItem.swift; sourceTree = "<group>"; };
+		8E7A986024BD2B6B00BCF889 /* StaticProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticProfileViewController.swift; sourceTree = "<group>"; };
+		8E7A986224BD2B6B00BCF889 /* CKStudyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKStudyUser.swift; sourceTree = "<group>"; };
+		8E7A986424BD2B6B00BCF889 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		8E7A986524BD2B6B00BCF889 /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		8E7A986724BD2B6B00BCF889 /* CKHealthDataStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKHealthDataStepViewController.swift; sourceTree = "<group>"; };
+		8E7A986824BD2B6B00BCF889 /* LoginStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStep.swift; sourceTree = "<group>"; };
+		8E7A986A24BD2B6B00BCF889 /* LoginCustomWaitStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginCustomWaitStepView.xib; sourceTree = "<group>"; };
+		8E7A986B24BD2B6B00BCF889 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		8E7A986C24BD2B6B00BCF889 /* LoginCustomWaitStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCustomWaitStepViewController.swift; sourceTree = "<group>"; };
+		8E7A986D24BD2B6B00BCF889 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E7A988924BD2BD100BCF889 /* CK-Workshop-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CK-Workshop-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E7A988A24BD2C5400BCF889 /* CK Workshop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CK Workshop.entitlements"; sourceTree = "<group>"; };
+		8E7A988B24BD2C5800BCF889 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		8E7A988D24BD2D0700BCF889 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C133B1124850D76A7B9C7224 /* Pods_CK_Workshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CK_Workshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E495A4EABC86B8A240ADCC93 /* Pods-CK Workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CK Workshop.release.xcconfig"; path = "Target Support Files/Pods-CK Workshop/Pods-CK Workshop.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E7A979E24BD2A6200BCF889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02BE2ACA9F44D626EE028236 /* Pods_CK_Workshop.framework in Frameworks */,
+				8E7A988C24BD2C5800BCF889 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0333B62631428372BA8C9C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A988B24BD2C5800BCF889 /* HealthKit.framework */,
+				C133B1124850D76A7B9C7224 /* Pods_CK_Workshop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7138E72691DCA0DB53CAA0CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E6C789B646FC27EDCDAA408 /* Pods-CK Workshop.debug.xcconfig */,
+				E495A4EABC86B8A240ADCC93 /* Pods-CK Workshop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E7A979824BD2A6200BCF889 = {
+			isa = PBXGroup;
+			children = (
+				8E7A97A324BD2A6200BCF889 /* CK Workshop */,
+				8E7A97A224BD2A6200BCF889 /* Products */,
+				7138E72691DCA0DB53CAA0CD /* Pods */,
+				0333B62631428372BA8C9C1B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E7A97A224BD2A6200BCF889 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A97A124BD2A6200BCF889 /* CK Workshop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E7A97A324BD2A6200BCF889 /* CK Workshop */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A985224BD2B6B00BCF889 /* Components */,
+				8E7A984424BD2B6B00BCF889 /* Supporting Files */,
+				8E7A986D24BD2B6B00BCF889 /* AppDelegate.swift */,
+				8E7A985124BD2B6B00BCF889 /* AppDelegate+CardinalKit.swift */,
+				8E7A988D24BD2D0700BCF889 /* Main.storyboard */,
+			);
+			path = "CK Workshop";
+			sourceTree = "<group>";
+		};
+		8E7A984424BD2B6B00BCF889 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A988A24BD2C5400BCF889 /* CK Workshop.entitlements */,
+				8E7A988924BD2BD100BCF889 /* CK-Workshop-Bridging-Header.h */,
+				8E7A984524BD2B6B00BCF889 /* Constants.swift */,
+				8E7A984624BD2B6B00BCF889 /* ResearchKit */,
+				8E7A984924BD2B6B00BCF889 /* Assets.xcassets */,
+				8E7A984A24BD2B6B00BCF889 /* GoogleService-Info.plist */,
+				8E7A984B24BD2B6B00BCF889 /* LaunchScreen.storyboard */,
+				8E7A985024BD2B6B00BCF889 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E7A984624BD2B6B00BCF889 /* ResearchKit */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A984724BD2B6B00BCF889 /* ORKESerialization.m */,
+				8E7A984824BD2B6B00BCF889 /* ORKESerialization.h */,
+			);
+			path = ResearchKit;
+			sourceTree = "<group>";
+		};
+		8E7A985224BD2B6B00BCF889 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A985324BD2B6B00BCF889 /* LaunchContainerViewController.swift */,
+				8E7A986324BD2B6B00BCF889 /* Onboarding */,
+				8E7A985424BD2B6B00BCF889 /* Study */,
+				8E7A985A24BD2B6B00BCF889 /* Networking */,
+				8E7A985C24BD2B6B00BCF889 /* Withdrawal */,
+				8E7A985E24BD2B6B00BCF889 /* Profile */,
+				8E7A986124BD2B6B00BCF889 /* Account */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8E7A985424BD2B6B00BCF889 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A985524BD2B6B00BCF889 /* StudyTableViewController.swift */,
+				8E7A985924BD2B6B00BCF889 /* StudyTableViewController+CardinalKit.swift */,
+				8E7A985624BD2B6B00BCF889 /* StudyTableItem.swift */,
+				8E7A985724BD2B6B00BCF889 /* StudyTasks.swift */,
+				8E7A985824BD2B6B00BCF889 /* StudyTableViewCell.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		8E7A985A24BD2B6B00BCF889 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A985B24BD2B6B00BCF889 /* CKNetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8E7A985C24BD2B6B00BCF889 /* Withdrawal */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A985D24BD2B6B00BCF889 /* WithdrawalViewController.swift */,
+			);
+			path = Withdrawal;
+			sourceTree = "<group>";
+		};
+		8E7A985E24BD2B6B00BCF889 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A985F24BD2B6B00BCF889 /* ProfileTableItem.swift */,
+				8E7A986024BD2B6B00BCF889 /* StaticProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8E7A986124BD2B6B00BCF889 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A986224BD2B6B00BCF889 /* CKStudyUser.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		8E7A986324BD2B6B00BCF889 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A986424BD2B6B00BCF889 /* OnboardingViewController.swift */,
+				8E7A986524BD2B6B00BCF889 /* IntroductionViewController.swift */,
+				8E7A986624BD2B6B00BCF889 /* Steps */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8E7A986624BD2B6B00BCF889 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A986724BD2B6B00BCF889 /* CKHealthDataStepViewController.swift */,
+				8E7A986824BD2B6B00BCF889 /* LoginStep.swift */,
+				8E7A986924BD2B6B00BCF889 /* Views */,
+				8E7A986B24BD2B6B00BCF889 /* ConsentDocument.swift */,
+				8E7A986C24BD2B6B00BCF889 /* LoginCustomWaitStepViewController.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		8E7A986924BD2B6B00BCF889 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A986A24BD2B6B00BCF889 /* LoginCustomWaitStepView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E7A97A024BD2A6200BCF889 /* CK Workshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7A97B524BD2A6400BCF889 /* Build configuration list for PBXNativeTarget "CK Workshop" */;
+			buildPhases = (
+				BBB6DA22D80CB3088D5062B9 /* [CP] Check Pods Manifest.lock */,
+				8E7A979D24BD2A6200BCF889 /* Sources */,
+				8E7A979E24BD2A6200BCF889 /* Frameworks */,
+				8E7A979F24BD2A6200BCF889 /* Resources */,
+				1E5C94569D5D1B018EF64999 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CK Workshop";
+			productName = "CK Workshop";
+			productReference = 8E7A97A124BD2A6200BCF889 /* CK Workshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E7A979924BD2A6200BCF889 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Stanford University";
+				TargetAttributes = {
+					8E7A97A024BD2A6200BCF889 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 8E7A979C24BD2A6200BCF889 /* Build configuration list for PBXProject "CK Workshop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E7A979824BD2A6200BCF889;
+			productRefGroup = 8E7A97A224BD2A6200BCF889 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E7A97A024BD2A6200BCF889 /* CK Workshop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E7A979F24BD2A6200BCF889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A987224BD2B6B00BCF889 /* LaunchScreen.storyboard in Resources */,
+				8E7A987024BD2B6B00BCF889 /* Assets.xcassets in Resources */,
+				8E7A987124BD2B6B00BCF889 /* GoogleService-Info.plist in Resources */,
+				8E7A988E24BD2D0800BCF889 /* Main.storyboard in Resources */,
+				8E7A988524BD2B6B00BCF889 /* LoginCustomWaitStepView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E5C94569D5D1B018EF64999 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CK Workshop/Pods-CK Workshop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CK Workshop/Pods-CK Workshop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CK Workshop/Pods-CK Workshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB6DA22D80CB3088D5062B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CK Workshop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E7A979D24BD2A6200BCF889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7A988024BD2B6B00BCF889 /* CKStudyUser.swift in Sources */,
+				8E7A988624BD2B6B00BCF889 /* ConsentDocument.swift in Sources */,
+				8E7A986E24BD2B6B00BCF889 /* Constants.swift in Sources */,
+				8E7A987E24BD2B6B00BCF889 /* ProfileTableItem.swift in Sources */,
+				8E7A987D24BD2B6B00BCF889 /* WithdrawalViewController.swift in Sources */,
+				8E7A987824BD2B6B00BCF889 /* StudyTableItem.swift in Sources */,
+				8E7A988724BD2B6B00BCF889 /* LoginCustomWaitStepViewController.swift in Sources */,
+				8E7A988424BD2B6B00BCF889 /* LoginStep.swift in Sources */,
+				8E7A987F24BD2B6B00BCF889 /* StaticProfileViewController.swift in Sources */,
+				8E7A987924BD2B6B00BCF889 /* StudyTasks.swift in Sources */,
+				8E7A988124BD2B6B00BCF889 /* OnboardingViewController.swift in Sources */,
+				8E7A988224BD2B6B00BCF889 /* IntroductionViewController.swift in Sources */,
+				8E7A987524BD2B6B00BCF889 /* AppDelegate+CardinalKit.swift in Sources */,
+				8E7A987724BD2B6B00BCF889 /* StudyTableViewController.swift in Sources */,
+				8E7A986F24BD2B6B00BCF889 /* ORKESerialization.m in Sources */,
+				8E7A988324BD2B6B00BCF889 /* CKHealthDataStepViewController.swift in Sources */,
+				8E7A987624BD2B6B00BCF889 /* LaunchContainerViewController.swift in Sources */,
+				8E7A987A24BD2B6B00BCF889 /* StudyTableViewCell.swift in Sources */,
+				8E7A988824BD2B6B00BCF889 /* AppDelegate.swift in Sources */,
+				8E7A987C24BD2B6B00BCF889 /* CKNetworkManager.swift in Sources */,
+				8E7A987B24BD2B6B00BCF889 /* StudyTableViewController+CardinalKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E7A984B24BD2B6B00BCF889 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E7A984C24BD2B6B00BCF889 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E7A97B324BD2A6400BCF889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E7A97B424BD2A6400BCF889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E7A97B624BD2A6400BCF889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6C789B646FC27EDCDAA408 /* Pods-CK Workshop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "CK Workshop/Supporting Files/CK Workshop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5J57DU2Q2;
+				INFOPLIST_FILE = "CK Workshop/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.sample-study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CK Workshop/Supporting Files/CK-Workshop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E7A97B724BD2A6400BCF889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E495A4EABC86B8A240ADCC93 /* Pods-CK Workshop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "CK Workshop/Supporting Files/CK Workshop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5J57DU2Q2;
+				INFOPLIST_FILE = "CK Workshop/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.sample-study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CK Workshop/Supporting Files/CK-Workshop-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E7A979C24BD2A6200BCF889 /* Build configuration list for PBXProject "CK Workshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7A97B324BD2A6400BCF889 /* Debug */,
+				8E7A97B424BD2A6400BCF889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7A97B524BD2A6400BCF889 /* Build configuration list for PBXNativeTarget "CK Workshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7A97B624BD2A6400BCF889 /* Debug */,
+				8E7A97B724BD2A6400BCF889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E7A979924BD2A6200BCF889 /* Project object */;
+}
