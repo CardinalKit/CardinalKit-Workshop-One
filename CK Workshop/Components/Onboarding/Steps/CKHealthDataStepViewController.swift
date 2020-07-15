@@ -37,15 +37,14 @@ class CKHealthDataStep: ORKInstructionStep {
         **************************************************************/
         // TODO: save as configurable element
         let hkTypesToReadInBackground: Set<HKQuantityType> = [
-            HKObjectType.quantityType(forIdentifier: .stepCount)!,
-            HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!,
-            HKObjectType.quantityType(forIdentifier: .flightsClimbed)!,
-            HKObjectType.quantityType(forIdentifier: .heartRate)!
+            HKObjectType.quantityType(forIdentifier: .stepCount)!
         ]
         
         // handle authorization from the OS
-        CKActivityManager.shared.getHealthAuthorizaton(forTypes: hkTypesToReadInBackground) { (success, error) in
-            completion(success, error)
+        OperationQueue.main.addOperation {
+            CKActivityManager.shared.getHealthAuthorizaton(forTypes: hkTypesToReadInBackground) { (success, error) in
+                completion(success, error)
+            }
         }
     }
 }

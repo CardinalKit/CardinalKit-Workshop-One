@@ -78,7 +78,7 @@ class OnboardingViewController: UIViewController {
         let introSteps: [ORKStep] = []
         
         // and steps regarding login / security
-        let emailVerificationSteps = [loginStep, loginVerificationStep, passcodeStep, completionStep]
+        let emailVerificationSteps = [passcodeStep, completionStep]
         
         // guide the user through ALL steps
         let fullSteps = introSteps + emailVerificationSteps
