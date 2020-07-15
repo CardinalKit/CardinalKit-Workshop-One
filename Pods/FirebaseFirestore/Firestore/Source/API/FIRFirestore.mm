@@ -16,16 +16,13 @@
 
 #import "FIRFirestore+Internal.h"
 
-#import <FirebaseCore/FIRApp.h>
-#import <FirebaseCore/FIRAppInternal.h>
-#import <FirebaseCore/FIRComponentContainer.h>
-
 #include <memory>
 #include <string>
 #include <utility>
 
 #import "FIRFirestoreSettings+Internal.h"
 
+#import "FirebaseCore/Sources/Private/FirebaseCoreInternal.h"
 #import "Firestore/Source/API/FIRCollectionReference+Internal.h"
 #import "Firestore/Source/API/FIRDocumentReference+Internal.h"
 #import "Firestore/Source/API/FIRListenerRegistration+Internal.h"
@@ -173,8 +170,16 @@ NS_ASSUME_NONNULL_BEGIN
     _settings = settings;
     _firestore->set_settings([settings internalSettings]);
 
+#if HAVE_LIBDISPATCH
     std::unique_ptr<util::Executor> user_executor =
         absl::make_unique<util::ExecutorLibdispatch>(settings.dispatchQueue);
+#else
+    // It's possible to build without libdispatch on macOS for testing purposes.
+    // In this case, avoid breaking the build.
+    std::unique_ptr<util::Executor> user_executor =
+        util::Executor::CreateSerial("com.google.firebase.firestore.user");
+#endif  // HAVE_LIBDISPATCH
+
     _firestore->set_user_executor(std::move(user_executor));
   }
 }
